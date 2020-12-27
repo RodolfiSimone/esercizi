@@ -1,11 +1,15 @@
+'''scrivi un programma ceh a scelta dell'utente calcoli l'area di un quadrato, rettangolo, triangolo e cerchio'''
+
+from math import pi
+
 figura = input("insrire il tipo di figura di cui si vuole calcolare l'area ").lower()
 if figura == "triangolo" or "quadrato" or "rettangolo" or "cerchio":
     if figura == "cerchio":
-        raggio = int(input("inserire il raggio "))
-        area = (raggio**2)*3.14
+        raggio = float(input("inserire il raggio "))
+        area = (raggio**2)*pi
     else:
-        lato= int(input("inserire un lato "))
-        altezza = int(input("inserire altezza "))
+        lato = float(input("inserire un lato "))
+        altezza = float(input("inserire altezza "))
         area = lato*altezza        
         if figura == "triangolo":
             area = area/2
