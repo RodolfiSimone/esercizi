@@ -12,8 +12,7 @@ def main():
     diz_naz_cap = dict()
     while True:
         naz_cap = input("inserire il nome della nazione e la capitale separate da una virgola ").split(", ")
-        if len(naz_cap) == 2:
-            diz_naz_cap[naz_cap[0]] = naz_cap[1]            
+        diz_naz_cap[naz_cap[0]] = naz_cap[1]            
         controllo = input("scrivere 'si', se si vogliono inserire altre nazioni, altrimenti scrivere 'no' ")
         if controllo == "no":
             break
