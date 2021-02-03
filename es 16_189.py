@@ -1,4 +1,4 @@
-'''date le nazioni e le rispettive capitali, permettere di visualizzare le capitali partendo dalla nazione'''
+'''date le nazioni e le rispettive capitali, permettere di visualizzare le capitali partendo dalla nazione, usando un dizionario'''
 
 def nazione_capitale(diz_naz_cap):
     nazione = input("Inserire la nazione di cui si vuole sapere la capitale ")
