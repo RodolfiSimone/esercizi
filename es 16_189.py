@@ -1,26 +1,12 @@
-''' 
-    partendo dall'esercizio 15_189 invertire la chiave ed il valore nel dizionario
-    e permettere di visualizzare la nazione partendo dalla capitale
-'''
+'''date le nazioni e le rispettive capitali, permettere di visualizzare le capitali partendo dalla nazione'''
 
 def nazione_capitale(diz_naz_cap):
     nazione = input("Inserire la nazione di cui si vuole sapere la capitale ")
     if nazione in diz_naz_cap:
-        print("La capitale de", nazione,"è :",  diz_naz_cap[nazione])
+        print("La capitale de", nazione,"è : ",  diz_naz_cap[nazione])
     else:
         print("La capitale della nazione cercata non è stata inserita")
 
-
-def capitale_nazione(diz_naz_cap):
-    diz_cap_naz = dict()
-    for chiave in diz_naz_cap:
-        diz_cap_naz[diz_naz_cap[chiave]] = chiave
-
-    capitale = input("Inserire la capitale di cui si vuole sapere la nazione ")
-    if capitale in diz_cap_naz:
-        print("La nazione di", capitale,"è :",  diz_cap_naz[capitale])
-    else:
-        print("La nazione della capitale cercata non è stata inserita")
 
 def main():
     diz_naz_cap = dict()
@@ -32,11 +18,7 @@ def main():
         if controllo == "no":
             break
     
-    controllo = int(input("scrivere 1, se si vuole cercare tramite capitale, 2 se tramite nazione "))
-    if controllo == 1:
-        capitale_nazione(diz_naz_cap)
-    else:
-        nazione_capitale(diz_naz_cap)
+    nazione_capitale(diz_naz_cap)
 
 
 main()
