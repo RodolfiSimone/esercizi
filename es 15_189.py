@@ -1,24 +1,24 @@
-'''date le nazioni e le rispettive capitali, permettere di visualizzare le capitali partendo dalla nazione'''
+'''date le nazioni e le rispettive capitali, permettere di visualizzare le capitali partendo dalla nazione, usando due liste'''
 
-def nazione_capitale(diz_naz_cap):
+def nazione_capitale(nazioni, capitali):
     nazione = input("Inserire la nazione di cui si vuole sapere la capitale ")
-    if nazione in diz_naz_cap:
-        print("La capitale de", nazione,"è : ",  diz_naz_cap[nazione])
+    if nazione in nazioni:
+        print("La capitale de", nazione,"è : ",  capitali[nazioni.index(nazione)])
     else:
         print("La capitale della nazione cercata non è stata inserita")
 
 
 def main():
-    diz_naz_cap = dict()
+    nazioni = []
+    capitali = []
     while True:
-        naz_cap = input("inserire il nome della nazione e la capitale separate da una virgola ").split(", ")
-        if len(naz_cap) == 2:
-            diz_naz_cap[naz_cap[0]] = naz_cap[1]            
+        nazioni.append(input("inserire il nome della nazione "))
+        capitali.append(input("inserire la capitale della nazione "))
         controllo = input("scrivere 'si', se si vogliono inserire altre nazioni, altrimenti scrivere 'no' ")
         if controllo == "no":
             break
     
-    nazione_capitale(diz_naz_cap)
+    nazione_capitale(nazioni, capitali)
 
 
 main()
