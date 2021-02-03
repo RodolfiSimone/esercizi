@@ -1,5 +1,5 @@
 ''' 
-    partendo dall'esercizio 15_189 invertire la chiave ed il valore nel dizionario
+    partendo dall'esercizio 16_189 invertire la chiave ed il valore nel dizionario
     e permettere di visualizzare la nazione partendo dalla capitale
 '''
 
