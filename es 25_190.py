@@ -18,4 +18,4 @@ for e in matricola_voti:
 for e in matricola_voti.values():
     if e not in voti_presenti:
         voti_presenti.append(e)
-print("I voti assegnati sono :", voti_presenti)
+print("I voti assegnati sono:", voti_presenti)
