@@ -1,4 +1,5 @@
-'''Da un dizionario che ha come chiave la matricola e valore il voto elenca, le matricole in ordine crescente di voto
+'''
+Da un dizionario che ha come chiave la matricola e valore il voto elenca, le matricole in ordine crescente di voto
 e poi indica quali voti sono stati assegnati, contati solo una volta
 '''
 
